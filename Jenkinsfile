@@ -21,7 +21,7 @@ pipeline {
                 echo 'Building Spring Boot backend'
 
                 dir('backend') {
-                    sh './mvnw -B clean verify'
+                    sh 'mvn -B clean verify'
                 }
             }
         }
